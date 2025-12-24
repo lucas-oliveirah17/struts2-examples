@@ -23,5 +23,8 @@
         <s:textfield label="Sua idade" name="age"/>
         <s:submit value="Enviar Dados" />
     </s:form>
+    
+    <br>
+    <a href="menu.action" class="voltar">⬅ Voltar para o Menu</a>
 </body>
 </html>

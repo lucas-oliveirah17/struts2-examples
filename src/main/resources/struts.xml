@@ -4,10 +4,13 @@
     "https://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+<!-- 	Ativa modo desenvolvedor, habilitando hot reloader e logs de erros detalhados. NUNCA USAR EM PRODUCAO -->
     <constant name="struts.devMode" value="true" />
+    
+    <constant name="struts.custom.i18n.resources" value="global" />
 
     <package name="basic" extends="struts-default">
-        
+
         <default-action-ref name="index" />
 
         <action name="index">
@@ -17,6 +20,15 @@
         <action name="hello" class="br.com.struts2.action.HelloAction">
             <result name="success">/hello.jsp</result>
             <result name="error_menor">/index.jsp</result>
+        </action>
+        
+        <action name="imc-form">
+            <result>/imc.jsp</result>
+        </action>
+        
+        <action name="calcularImc" class="br.com.struts2.action.IMCAction">
+            <result name="success">/imc-result.jsp</result>
+            <result name="input">/imc.jsp</result>
         </action>
 
     </package>

@@ -18,6 +18,12 @@
             <br>
             <small>Conceitos: ActionSupport, Getters/Setters, struts.xml básico.</small>
         </li>
+        
+        <li>
+            <a href="imc-form.action">02. Calculadora de IMC</a>
+            <br>
+            <small>Conceitos: Double, Navegação entre telas e Lógica de Negócio.</small>
+        </li>
 	</ul>
 </body>
 </html>
