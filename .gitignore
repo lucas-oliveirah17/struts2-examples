@@ -1,0 +1,29 @@
+# --- Maven ---
+target/
+pom.xml.tag
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+*.war
+*.ear
+*.jar
+
+# --- IDEs (Eclipse, IntelliJ, VS Code) ---
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
