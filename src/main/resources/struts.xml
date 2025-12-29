@@ -37,5 +37,25 @@
             <result name="input">/calculator.jsp</result>
         </action>
 
+		<action name="usuario-lista" class="br.com.struts2.action.UsuarioAction">
+            <result name="success">/usuario-lista.jsp</result>
+        </action>
+
+        <action name="usuario-novo" class="br.com.struts2.action.UsuarioAction" method="novo">
+            <result name="input">/usuario-form.jsp</result>
+        </action>
+
+        <action name="usuario-salvar" class="br.com.struts2.action.UsuarioAction" method="salvar">
+            <result name="success" type="redirectAction">usuario-lista</result>
+            <result name="input">/usuario-form.jsp</result>
+        </action>
+
+        <action name="usuario-editar" class="br.com.struts2.action.UsuarioAction" method="editar">
+            <result name="input">/usuario-form.jsp</result>
+        </action>
+
+        <action name="usuario-excluir" class="br.com.struts2.action.UsuarioAction" method="excluir">
+            <result name="success" type="redirectAction">usuario-lista</result>
+        </action>
     </package>
 </struts>

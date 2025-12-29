@@ -7,7 +7,10 @@
 	<meta charset="UTF-8">
 	<title>Resultado IMC</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+	
+<body>
 	<h1>Resultado</h1>
 
     <div style="background: #e8f6f3; padding: 20px; border-radius: 8px; border: 1px solid #a2d9ce;">
@@ -17,9 +20,9 @@
     </div>
 
     <br>
-    <a href="imc-form.action" class="voltar">Calcular Novamente</a>
-    <a href="menu.action" class="voltar">Voltar para o Menu</a>
-<body>
-
+    <a href="imc-form.action" class="btn btn-success">Calcular Novamente</a>
+    <a href="menu.action" class="btn btn-secondary">
+    	<i class="fa fa-arrow-left"></i> Voltar
+   	</a>
 </body>
 </html>

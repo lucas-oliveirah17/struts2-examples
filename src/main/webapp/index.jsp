@@ -36,6 +36,14 @@
                 <small>Conceitos: Lógica de Negócio.</small>
             </a>
         </li>
+        
+        <li>
+            <a href="usuario-lista.action">
+                <span class="menu-title">04. Gerenciamento de Usuario</span>
+                <br>
+                <small>Conceitos: CRUD, JDBC e Padrão DAO</small>
+            </a>
+        </li>
 	</ul>
 </body>
 </html>

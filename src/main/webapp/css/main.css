@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+   font-size: 18px;	
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fdfdfd;
@@ -15,10 +23,18 @@ h1 {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #2980b9;
+p {
+	color: black;
+	font-size: 1.2rem;
+    line-height: 1.6;
 }
 
+.errorMessage {
+	color: red;
+	font-weight:bold;
+}
+
+/* --- MENU PRINCIPAL --- */
 ul.menu-list {
     list-style-type: none;
     padding: 0;
@@ -27,7 +43,6 @@ ul.menu-list {
 ul.menu-list li {
     background: #f4f4f4;
     margin: 10px 0;
-    padding: 15px;
     border-left: 6px solid #2c3e50;
     transition: background 0.3s;
 }
@@ -40,6 +55,7 @@ ul.menu-list li:hover {
 ul.menu-list a {
     text-decoration: none;
     color: #333;
+    padding: 15px;
     font-weight: bold;
     font-size: 1.2em;
     display: block;
@@ -47,50 +63,108 @@ ul.menu-list a {
 
 ul.menu-list small {
     color: #666;
+    font-size:0.9rem;
     font-style: italic;
 }
 
-form {
+.card{
     background: #f9f9f9;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    max-width: 500px;
 }
 
-input[type="text"], input[type="password"], input[type="number"] {
+/* --- FORMULARIOS --- */
+form input[type="text"], 
+form input[type="password"], 
+form input[type="email"], 
+form select {
     width: 100%;
-    padding: 8px;
-    margin: 5px 0;
+    padding: 10px;
+    margin: 5px 0 15px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #27ae60;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
     font-size: 1em;
-    margin-top: 10px;
+    font-family: inherit;
 }
 
-input[type="submit"]:hover {
-    background-color: #219150;
+label {
+	font-weight:bold;
 }
 
-a.voltar {
-    display: inline-block;
+/* --- BOTÕES --- */
+.btn {
+	padding: 10px 20px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	border-radius: 8px;
+	border: none;
+    cursor: pointer;
+    user-select:none;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+.btn-success { background-color: #27ae60; }
+.btn-edit    { background-color: #f39c12; }
+.btn-delete  { background-color: #e74c3c; }
+.btn-secondary { background-color: #7f8c8d; }
+
+/* --- TABELA --- */
+table.data-table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
-    color: #7f8c8d;
-    text-decoration: none;
-    border: 1px solid #bdc3c7;
-    padding: 5px 10px;
-    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
 }
-a.voltar:hover {
-    background: #ecf0f1;
+
+table.data-table th, 
+table.data-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
 }
+
+table.data-table th {
+    background-color: #2c3e50;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05rem;
+}
+
+table.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.text-center { text-align: center; }
+
+.col-id { width: 5%; }
+.col-nome { width: 50%; }
+.col-user { width: 15%; }
+.col-email { width: 25%; }
+.col-cargo { width: 15%; }
+.col-action { width: 15%; }
+
+.col-w5  { width: 5%; }
+.col-w10 { width: 10%; }
+.col-w15 { width: 15%; }
+.col-w20 { width: 20%; }
+.col-w25 { width: 25%; }
+.col-w30 { width: 30%; }
+.col-w35 { width: 35%; }
+.col-w40 { width: 40%; }
+.col-w45 { width: 45%; }
+.col-w50 { width: 50%; }
