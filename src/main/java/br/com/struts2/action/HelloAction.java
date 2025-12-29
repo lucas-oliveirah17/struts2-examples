@@ -28,11 +28,9 @@ public class HelloAction extends ActionSupport {
         this.username = username;
     }
 
-    // O Struts chama getUsername() para exibir na tela depois
     public String getUsername() {
         return username;
     }
-
 
 	public int getAge() {
 		return age;
@@ -42,4 +40,5 @@ public class HelloAction extends ActionSupport {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
 }

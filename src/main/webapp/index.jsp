@@ -14,15 +14,27 @@
 
     <ul class="menu-list">
         <li>
-            <a href="hello.action">01. Hello World &amp; Form Simples</a>
-            <br>
-            <small>Conceitos: ActionSupport, Getters/Setters, struts.xml básico.</small>
+            <a href="hello.action">
+                <span class="menu-title">01. Hello World &amp; Form Simples</span>
+                <br>
+                <small>Conceitos: ActionSupport, Getters/Setters, struts.xml básico.</small>
+            </a>
         </li>
         
         <li>
-            <a href="imc-form.action">02. Calculadora de IMC</a>
-            <br>
-            <small>Conceitos: Double, Navegação entre telas e Lógica de Negócio.</small>
+            <a href="imc-form.action">
+                <span class="menu-title">02. Calculadora de IMC</span>
+                <br>
+                <small>Conceitos: Double, Navegação entre telas e Lógica de Negócio.</small>
+            </a>
+        </li>
+        
+        <li>
+            <a href="calculator.action">
+                <span class="menu-title">03. Calculadora Básica</span>
+                <br>
+                <small>Conceitos: Lógica de Negócio.</small>
+            </a>
         </li>
 	</ul>
 </body>
