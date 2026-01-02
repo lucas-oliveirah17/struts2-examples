@@ -14,7 +14,8 @@
 
     <ul class="menu-list">
         <li>
-            <a href="hello.action">
+        	<s:url action="hello" namespace="/hello" var="urlHello" />
+            <a href="${urlHello}">
                 <span class="menu-title">01. Hello World &amp; Form Simples</span>
                 <br>
                 <small>Conceitos: ActionSupport, Getters/Setters, struts.xml básico.</small>
@@ -22,7 +23,8 @@
         </li>
         
         <li>
-            <a href="imc-form.action">
+        	<s:url action="imc-form" namespace="/calculator-imc" var="urlCalculatorImc" />
+            <a href="${urlCalculatorImc}">
                 <span class="menu-title">02. Calculadora de IMC</span>
                 <br>
                 <small>Conceitos: Double, Navegação entre telas e Lógica de Negócio.</small>
@@ -30,7 +32,8 @@
         </li>
         
         <li>
-            <a href="calculator.action">
+        	<s:url action="calculator" namespace="/calculator" var="urlCalculator" />
+            <a href="${urlCalculator}">
                 <span class="menu-title">03. Calculadora Básica</span>
                 <br>
                 <small>Conceitos: Lógica de Negócio.</small>
@@ -38,7 +41,8 @@
         </li>
         
         <li>
-            <a href="usuario-lista.action">
+        <s:url action="usuario-lista" namespace="/usuario-crud" var="urlUsuarioCrud" />
+            <a href="${urlUsuarioCrud}">
                 <span class="menu-title">04. Gerenciamento de Usuario</span>
                 <br>
                 <small>Conceitos: CRUD, JDBC e Padrão DAO</small>

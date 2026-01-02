@@ -70,7 +70,9 @@
 	
 
     <br>
-    <a href="index.jsp" class="btn btn-secondary">
+    
+    <s:url action="index" namespace="/" var="urlIndex" />
+    <a href="${urlIndex}" class="btn btn-secondary">
         <i class="fa fa-arrow-left"></i> Voltar
     </a>
 </body>

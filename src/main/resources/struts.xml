@@ -9,8 +9,13 @@
     <constant name="struts.devMode" value="true" />
     
     <constant name="struts.custom.i18n.resources" value="global" />
+    
+	<include file="calculator.xml"/>
+	<include file="calculator-imc.xml"/>
+	<include file="hello.xml"/>     
+	<include file="usuario-crud.xml"/>
 
-    <package name="basic" extends="struts-default">
+    <package name="default" extends="struts-default">
 
         <default-action-ref name="index" />
 
@@ -18,44 +23,5 @@
             <result>/index.jsp</result>
         </action>
         
-        <action name="hello" class="br.com.struts2.action.HelloAction">
-            <result name="success">/hello.jsp</result>
-            <result name="error_menor">/index.jsp</result>
-        </action>
-        
-        <action name="imc-form">
-            <result>/imc.jsp</result>
-        </action>
-        
-        <action name="calcularImc" class="br.com.struts2.action.IMCAction">
-            <result name="success">/imc-result.jsp</result>
-            <result name="input">/imc.jsp</result>
-        </action>
-        
-        <action name="calculator" class="br.com.struts2.action.CalculatorAction">
-            <result name="success">/calculator.jsp</result>
-            <result name="input">/calculator.jsp</result>
-        </action>
-
-		<action name="usuario-lista" class="br.com.struts2.action.UsuarioAction">
-            <result name="success">/usuario-lista.jsp</result>
-        </action>
-
-        <action name="usuario-novo" class="br.com.struts2.action.UsuarioAction" method="novo">
-            <result name="input">/usuario-form.jsp</result>
-        </action>
-
-        <action name="usuario-salvar" class="br.com.struts2.action.UsuarioAction" method="salvar">
-            <result name="success" type="redirectAction">usuario-lista</result>
-            <result name="input">/usuario-form.jsp</result>
-        </action>
-
-        <action name="usuario-editar" class="br.com.struts2.action.UsuarioAction" method="editar">
-            <result name="input">/usuario-form.jsp</result>
-        </action>
-
-        <action name="usuario-excluir" class="br.com.struts2.action.UsuarioAction" method="excluir">
-            <result name="success" type="redirectAction">usuario-lista</result>
-        </action>
     </package>
 </struts>

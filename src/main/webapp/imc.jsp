@@ -18,7 +18,7 @@
 	        <s:fielderror/>
 	    </div>
 	
-	    <s:form action="calcularImc">
+	    <s:form action="calcularImc" namespace="/calculator-imc">
 	        <s:textfield label="Seu Peso (kg)" name="peso" placeholder="Ex: 80,5" />
 	        <s:textfield label="Sua Altura (m)" name="altura" placeholder="Ex: 1,75"  />
 	        <s:submit value="Calcular Agora" cssClass="btn btn-success"/>
@@ -26,7 +26,8 @@
 	    
 	</div>
 	<br>
-	<a href="menu.action" class="btn btn-secondary">
+	<s:url action="index" namespace="/" var="urlIndex" />
+	<a href="${urlIndex}" class="btn btn-secondary">
 		<i class="fa fa-arrow-left"></i> Voltar
 	</a>
     

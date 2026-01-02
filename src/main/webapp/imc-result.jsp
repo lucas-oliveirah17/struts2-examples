@@ -21,7 +21,9 @@
 
     <br>
     <a href="imc-form.action" class="btn btn-success">Calcular Novamente</a>
-    <a href="menu.action" class="btn btn-secondary">
+    
+    <s:url action="index" namespace="/" var="urlIndex" />
+    <a href="${urlIndex}" class="btn btn-secondary">
     	<i class="fa fa-arrow-left"></i> Voltar
    	</a>
 </body>

@@ -19,7 +19,7 @@
 	        </div>
 	    </s:if>
 	    
-		<s:form action="calculator">
+		<s:form action="calculator" namespace="calculator">
 		
 			<s:textfield name="result" readOnly="true" label="Resultado"/>
 
@@ -40,7 +40,8 @@
 	</div>
 	
 	<br>
-    <a href="menu.action" class="btn btn-secondary">
+    <s:url action="index" namespace="/" var="urlIndex" />
+    <a href="${urlIndex}" class="btn btn-secondary">
     	<i class="fa fa-arrow-left"></i> Voltar
     </a>
 	

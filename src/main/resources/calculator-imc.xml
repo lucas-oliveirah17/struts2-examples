@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "https://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="calculator-imc" namespace="/calculator-imc" extends="struts-default">
+        
+        <action name="imc-form">
+            <result>/imc.jsp</result>
+        </action>
+        
+        <action name="calcularImc" class="br.com.struts2.action.IMCAction">
+            <result name="success">/imc-result.jsp</result>
+            <result name="input">/imc.jsp</result>
+        </action>
+        
+    </package>
+</struts>

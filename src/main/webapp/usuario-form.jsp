@@ -15,7 +15,7 @@
         <s:else>👤➕ Novo Usuário</s:else>
     </h1>
 
-    <s:form action="usuario-salvar" theme="simple" class="card">
+    <s:form action="usuario-salvar" namespace="/usuario-crud" theme="simple" class="card">
         <s:hidden name="usuario.id" />
 
         <label>Nome Completo:</label>

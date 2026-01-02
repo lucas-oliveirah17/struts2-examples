@@ -18,14 +18,15 @@
 	      	<h3 style="color:blue">Sua idade é, <s:property value="age" />!</h3>       
 	    </s:if>
 	    	    
-	    <s:form action="hello">
+	    <s:form action="hello" namespace="/hello">
 	        <s:textfield label="Digite seu nome" name="username" />
 	        <s:textfield label="Sua idade" name="age"/>
 	        <s:submit value="Enviar Dados" cssClass="btn btn-success" />
 	    </s:form>
 	    
 	    <br>
-	    <a href="menu.action" class="btn btn-secondary">
+	    <s:url action="index" namespace="/" var="urlIndex" />
+	    <a href="${urlIndex}" class="btn btn-secondary">
 	    	<i class="fa fa-arrow-left"></i> Voltar para o Menu
 	    </a>
     </div>
